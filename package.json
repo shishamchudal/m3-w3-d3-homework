@@ -1,0 +1,30 @@
+{
+  "name": "m3-w3-d3-homework",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "lite": "lite-server",
+    "scss": "sass --no-source-map scss/:css/",
+    "start": "npm run watch:all",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch:scss": "onchange 'scss/*.scss' -- npm run scss",
+    "watch:all": "parallelshell 'npm run watch:scss' 'npm run lite'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shishamchudal/m3-w3-d2-homework.git"
+  },
+  "author": "Shisham Chudal",
+  "license": "ISC",
+  "devDependencies": {
+    "lite-server": "^2.3.0",
+    "onchange": "^3.3.0",
+    "parallelshell": "^3.0.1",
+    "sass": "^1.62.0"
+  },
+  "bugs": {
+    "url": "https://github.com/shishamchudal/m3-w3-d2-homework/issues"
+  },
+  "homepage": "https://github.com/shishamchudal/m3-w3-d2-homework#readme"
+}
